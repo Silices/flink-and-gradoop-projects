@@ -1,0 +1,6 @@
+Average job execution time for /shared_folder/input_files/textfile_0_pattern_alternating_lines_100.txt: 2197 ms
+Average job execution time for /shared_folder/input_files/textfile_0_pattern_alternating_lines_99.txt: 2211 ms
+Average job execution time for /shared_folder/input_files/textfile_0_pattern_batches_lines_100.txt: 2247 ms
+Average job execution time for /shared_folder/input_files/textfile_0_pattern_batches_lines_99.txt: 2228 ms
+Average job execution time for /shared_folder/input_files/textfile_0_pattern_random_uniform_lines_100.txt: 2226 ms
+Average job execution time for /shared_folder/input_files/textfile_0_pattern_random_uniform_lines_99.txt: 2271 ms

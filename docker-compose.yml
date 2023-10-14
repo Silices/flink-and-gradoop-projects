@@ -1,0 +1,150 @@
+version: "2.2"
+services:
+  jobmanager:
+    image: flink:latest
+    ports:
+      - "8081:8081"
+    command: jobmanager
+    volumes:
+      - S:\\apache-flink\\test_folder:/shared_folder
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager       
+
+  taskmanager1:
+    image: flink:latest
+    depends_on:
+      - jobmanager
+    command: taskmanager
+    scale: 1
+    volumes:
+      - S:\\apache-flink\\test_folder:/shared_folder
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 1
+        taskmanager.memory.network.fraction: 0.2
+        taskmanager.memory.network.min: 64mb
+        taskmanager.memory.network.max: 512mb
+
+  taskmanager2:
+    image: flink:latest
+    depends_on:
+      - jobmanager
+    command: taskmanager
+    scale: 1
+    volumes:
+      - S:\\apache-flink\\test_folder:/shared_folder
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 1
+        taskmanager.memory.network.fraction: 0.2
+        taskmanager.memory.network.min: 64mb
+        taskmanager.memory.network.max: 512mb
+        
+  taskmanager3:
+    image: flink:latest
+    depends_on:
+      - jobmanager
+    command: taskmanager
+    scale: 1
+    volumes:
+      - S:\\apache-flink\\test_folder:/shared_folder
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 1
+        taskmanager.memory.network.fraction: 0.2
+        taskmanager.memory.network.min: 64mb
+        taskmanager.memory.network.max: 512mb
+
+  taskmanager4:
+    image: flink:latest
+    depends_on:
+      - jobmanager
+    command: taskmanager
+    scale: 1
+    volumes:
+      - S:\\apache-flink\\test_folder:/shared_folder
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 1
+        taskmanager.memory.network.fraction: 0.2
+        taskmanager.memory.network.min: 64mb
+        taskmanager.memory.network.max: 512mb
+        
+  taskmanager5:
+    image: flink:latest
+    depends_on:
+      - jobmanager
+    command: taskmanager
+    scale: 1
+    volumes:
+      - S:\\apache-flink\\test_folder:/shared_folder
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 1
+        taskmanager.memory.network.fraction: 0.2
+        taskmanager.memory.network.min: 64mb
+        taskmanager.memory.network.max: 512mb
+
+  taskmanager6:
+    image: flink:latest
+    depends_on:
+      - jobmanager
+    command: taskmanager
+    scale: 1
+    volumes:
+      - S:\\apache-flink\\test_folder:/shared_folder
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 1
+        taskmanager.memory.network.fraction: 0.2
+        taskmanager.memory.network.min: 64mb
+        taskmanager.memory.network.max: 512mb
+        
+  taskmanager7:
+    image: flink:latest
+    depends_on:
+      - jobmanager
+    command: taskmanager
+    scale: 1
+    volumes:
+      - S:\\apache-flink\\test_folder:/shared_folder
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 1
+        taskmanager.memory.network.fraction: 0.2
+        taskmanager.memory.network.min: 64mb
+        taskmanager.memory.network.max: 512mb
+
+  taskmanager8:
+    image: flink:latest
+    depends_on:
+      - jobmanager
+    command: taskmanager
+    scale: 1
+    volumes:
+      - S:\\apache-flink\\test_folder:/shared_folder
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 1
+        taskmanager.memory.network.fraction: 0.2
+        taskmanager.memory.network.min: 64mb
+        taskmanager.memory.network.max: 512mb
+        
