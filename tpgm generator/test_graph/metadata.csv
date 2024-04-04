@@ -1,4 +1,5 @@
 g;graph;
 v;parent;
 v;child;
+v;grandchild;
 e;childOf;
